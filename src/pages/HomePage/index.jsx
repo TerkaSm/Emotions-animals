@@ -24,7 +24,7 @@ export const HomePage = () => {
           </div>
           <img
             className="home__img home__img--1"
-            src="img/zvirata/panda/panda_uvod.svg"
+            src="img/zvirata/panda/panda_uvod.svg" 
             alt="panda"
           />
           <img
