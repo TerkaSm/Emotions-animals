@@ -1,0 +1,88 @@
+.section-background-baby-home {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(247, 247, 247, 0.2),
+      rgba(255, 255, 255, 0.2)),
+    url(img/pozadi_detska-titulka.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+}
+
+.baby-home__img {
+  height: 50vh;
+  position: absolute;
+}
+
+.baby-home__img:hover {
+  transform: scale(1.1);
+}
+
+/* kočka */
+
+.baby-home__img--1 {
+  height: 46vh;
+  bottom: 2vmin;
+  right: 98vmin;
+}
+
+/* panda */
+
+.baby-home__img--2 {
+  height: 50vh;
+  bottom: 2vmin;
+  right: 0vmin;
+}
+
+/* tygr */
+
+.baby-home__img--3 {
+  height: 55vh;
+  bottom: 0vmin;
+  right: 45vmin;
+}
+
+/* bubliny */
+
+.baby-home__bubble {
+  position: absolute;
+  height: 25vh;
+}
+
+.baby-home__bubble--left {
+  bottom: 46vmin;
+  right: 135vmin;
+}
+
+.baby-home__bubble--rotate {
+  bottom: 52vmin;
+  right: 43vmin;
+  transform: rotate(-10deg);
+}
+
+.baby-home__bubble--right {
+  bottom: 51vmin;
+  right: 3vmin;
+  transform: rotate(-10deg);
+}
+
+.baby-home__bed {
+  position: absolute;
+  height: 20vh;
+  bottom: 49vmin;
+  right: 138vmin;
+}
+
+.baby-home__cubes {
+  position: absolute;
+  height: 13vh;
+  bottom: 60vmin;
+  right: 46vmin;
+}
+
+.baby-home__swing {
+  position: absolute;
+  height: 16vh;
+  bottom: 57vmin;
+  right: 7vmin;
+}

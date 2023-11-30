@@ -1,13 +1,229 @@
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 4rem;
+/* HOME-PAGE */
+
+.home {
+  max-width: 1200px;
+  padding: 20px;
+  color: white;
+  text-align: center;
 }
 
-.logo {
-  width: 10rem;
-  height: 10rem;
-  background-image: url(./img/rocket.svg);
-  background-size: contain;
+.home__content {
+  padding-bottom: 3rem;
+  padding-bottom: clamp(1rem, 3vw, 3rem);
+}
+
+.home__title {
+  margin-top: 1.5rem;
+  font-family: 'Life Savers', serif;
+  font-size: clamp(2.6rem, 5vw, 5rem);
+  font-weight: 700;
+}
+
+.home__text {
+  font-size: clamp(1rem, 3vw, 2rem);
+}
+
+.home__flex {
+  flex-shrink: 0 0 auto;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 3rem;
+}
+
+.home__img {
+  position: absolute;
+  height: 83vh;
+}
+
+.home__img--1 {
+  top: -52vmin;
+  left: -10vmin;
+  transform: rotate(-180deg);
+  animation: pohyb-do-L 12s infinite;
+  animation-fill-mode: both;
+}
+
+.home__img--2 {
+  left: -32vmin;
+  bottom: -21vmin;
+  transform: rotate(15deg);
+  animation: pohyb-zdola 10s infinite;
+  animation-delay: 14s;
+  animation-fill-mode: both;
+}
+
+.home__img--3 {
+  right: -63vmin;
+  bottom: -6vmin;
+  height: 105vh;
+  transform: rotate(-15deg);
+  animation: pohyb-zprava 6s infinite;
+  animation-delay: 7s;
+  animation-fill-mode: both;
+}
+
+@media screen and (min-width: 600px) {
+  .home__text {
+    padding: 0 6rem;
+    max-width: 70vw;
+  }
+
+  .home__flex {
+    flex-direction: row;
+  }
+}
+
+.u-position-bottom-right {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.u-position-top-right {
+  position: absolute;
+  top: 17vmin;
+  right: 5vmin;
+}
+
+/* ANIMACE */
+
+
+@keyframes pohyb-dolu {
+
+  0%,
+  100% {
+    top: -153vmin;
+  }
+
+  33% {
+    top: -53vmin;
+  }
+
+  66% {
+    top: -53vmin;
+  }
+}
+
+@keyframes pohyb-do-L {
+
+  0%,
+  100% {
+    top: -153vmin;
+    left: -10vmin;
+  }
+
+  20% {
+    top: -53vmin;
+    left: -10vmin;
+  }
+
+  35% {
+    top: -53vmin;
+    left: -10vmin;
+  }
+
+  45% {
+    top: -53vmin;
+    left: 20vmin
+  }
+
+  65% {
+    top: -53vmin;
+    left: 50vmin
+  }
+
+  75% {
+    top: -58vmin;
+    left: 30vmin
+  }
+
+  85% {
+    top: -53vmin;
+    left: -10vmin
+  }
+
+
+}
+
+@keyframes pohyb-zprava {
+
+  0%,
+  100% {
+    right: -162vmin;
+  }
+
+  33% {
+    right: -62vmin;
+  }
+
+  66% {
+    right: -62vmin;
+  }
+}
+
+@keyframes pohyb-zdola {
+
+  0%,
+  100% {
+    bottom: -121vmin;
+  }
+
+  20% {
+    bottom: -21vmin;
+  }
+
+  40% {
+    bottom: -45vmin;
+  }
+
+  50% {
+    bottom: -45vmin;
+  }
+
+  60% {
+    bottom: -21vmin;
+  }
+
+  80% {
+    bottom: -21vmin;
+  }
+}
+
+@keyframes zmena-primary {
+  0% {
+    background-color: #8BC343;
+    transform: scale(1.0);
+  }
+
+  80% {
+    background-color: red;
+    transform: scale(1.05);
+  }
+
+  100% {
+    background-color: red;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes zmena-secondary {
+  0% {
+    background-color: #fff;
+    color: #8C8C8C;
+    transform: scale(1.0);
+  }
+
+  80% {
+    background-color: #508e24;
+    color: white;
+    transform: scale(1.05);
+  }
+
+  100% {
+    background-color: #508e24;
+    color: white;
+    transform: scale(1.05);
+  }
 }

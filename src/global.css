@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -12,4 +12,123 @@ html {
   max-width: 26rem;
   margin-right: auto;
   margin-left: auto;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@700&display=swap');
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.section--color-1 {
+  background-color: #60B7C2;
+}
+
+.audio-box {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .audio-box {
+    display: block;
+    position: absolute;
+    top: 1vmin;
+    right: 30vmin;
+  }
+}
+
+
+/* BUTTONS */
+
+.button {
+  display: inline-block;
+  padding: clamp(0.3rem, 2vw, 1.5rem) clamp(1rem, 4vw, 3.2rem);
+  font-size: clamp(1.2rem, 2vw, 2.5rem);
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: 'Life Savers', serif;
+  color: white;
+}
+
+.button--primary {
+  background-color: #675555;
+}
+
+.button--primary:hover {
+  animation: zmena-primary 1.2s;
+  animation-fill-mode: both;
+}
+
+.button--secondary {
+  background-color: #fff;
+  color: #675555;
+}
+
+
+.button--secondary:hover {
+  animation: zmena-secondary 1.2s;
+  animation-fill-mode: both;
+}
+
+.button--small {
+  padding: clamp(0.3rem, 2vw, .9rem) clamp(1rem, 3vw, 2rem);
+  font-size: clamp(1rem, 2vw, 1.6rem);
+  background-color: #675555b4;
+}
+
+.button--small:hover {
+  transform: scale(1.1);
+}
+
+.swipe-button {
+  position: absolute;
+}
+
+.swipe-button--1 {
+  position: absolute;
+  top: 5vmin;
+  left: 5vmin;
+}
+
+.swipe-button--2 {
+  position: absolute;
+  top: 5vmin;
+  right: 5vmin;
+}
+
+.swipe-button__base {
+  height: 10vmin;
+}
+
+.swipe-button__home {
+  position: absolute;
+  height: 9vmin;
+  top: .5vmin;
+  left: 15vmin;
+  /* bude se posouvat: left 1vmin */
+}
+
+.swipe-button__info {
+  position: absolute;
+  height: 9vmin;
+  top: .5vmin;
+  right: 15vmin;
+  /* bude se posouvat: right 1vmin */
 }
