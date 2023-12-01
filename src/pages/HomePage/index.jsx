@@ -1,7 +1,7 @@
 import './style.css';
-import catImg from './img/cat.svg'
-import pandaImg from './img/panda.svg'
-import tigerImg from './img/tygr.svg'
+import catImg from './img/kocka_home.svg'
+import pandaImg from './img/panda_home.svg'
+import tigerImg from './img/tygr_home.svg'
 
 export const HomePage = () => {
   return (
@@ -31,7 +31,7 @@ export const HomePage = () => {
           />
           <img
             className="home__img home__img--2"
-            src={kockaImg}
+            src={catImg}
             alt="kočka"
           />
           <img
