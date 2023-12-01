@@ -2,6 +2,7 @@ import './style.css';
 import catImg from './img/kocka_home.svg'
 import pandaImg from './img/panda_home.svg'
 import tigerImg from './img/tygr_home.svg'
+import { ButtonPrimary, ButtonSecondary } from '../../components/Button';
 
 export const HomePage = () => {
   return (
@@ -16,12 +17,12 @@ export const HomePage = () => {
               </p>
             </div>
             <div className="home__flex">
-              <a className="button button--secondary" href="#">
+              <ButtonSecondary src={"/info"}>
                 Info o projektu
-              </a>
-              <a className="button button--primary" href="detska-titulka.html">
+              </ButtonSecondary>
+              <ButtonPrimary src={"/hra"}>
                 Vstup do hry
-              </a>
+              </ButtonPrimary>
             </div>
           </div>
           <img

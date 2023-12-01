@@ -50,54 +50,6 @@ main {
   }
 }
 
-/* BUTTONS */
-
-.button {
-  display: inline-block;
-  padding: clamp(0.3rem, 2vw, 1.5rem) clamp(1rem, 4vw, 3.2rem);
-  font-size: clamp(1.2rem, 2vw, 2.5rem);
-  border-radius: 30px;
-  text-decoration: none;
-  font-family: "Life Savers", serif;
-  transform: scale(1);
-  color: var(--secondary-color);
-}
-
-.button--primary {
-  background-color: var(--primary-color);
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.button--primary:hover {
-  background-color: var(--primary-color-hover);
-  color: var(--primary-color);
-  transform: scale(1.07);
-}
-
-.button--secondary {
-  background-color: var(--secondary-color);
-  transition: background-color 0.3s, transform 0.3s;
-  color: var(--primary-color);
-}
-
-.button--secondary:hover {
-  color: var(--secondary-color);
-  background-color: var(--secondarycolor-hover);
-  transform: scale(1.07);
-}
-
-
-/* pouze pro zkoušku */
-
-.button--small {
-  padding: clamp(0.3rem, 2vw, 0.9rem) clamp(1rem, 3vw, 2rem);
-  font-size: clamp(1rem, 2vw, 1.6rem);
-  background-color: #675555b4;
-}
-
-.button--small:hover {
-  transform: scale(1.1);
-}
 
 /* SWIPE BUTTONY (posouvátka) */
 

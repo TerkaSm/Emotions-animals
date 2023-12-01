@@ -3,20 +3,6 @@ import './style.css';
 export const ChildPage = () => {
   return (
     <main>
-      <div className="audio-box">
-        <audio controls>
-          <source src="audio/kocka_titulka.mp3" type="audio/mp3"></source>
-        </audio>
-
-        <audio controls>
-          <source src="audio/tygr_titulka.mp3" type="audio/mp3"></source>
-        </audio>
-
-        <audio controls>
-          <source src="audio/panda_titulka.mp3" type="audio/mp3"></source>
-        </audio>
-      </div>
-
       <section className="section-background-baby-home">
         <nav>
           <div className="swipe-button swipe-button--1">
