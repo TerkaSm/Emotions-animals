@@ -1,76 +1,48 @@
-import './style.css';
+import "./style.css";
+import { Navigation } from "../../components/Navigation";
+import { Link } from "react-router-dom";
+import imgCat from "./img/kocka_uvod.gif";
+import imgPanda from "./img/panda_uvod.gif";
+import imgTiger from "./img/tygr_uvod.gif";
+import imgBubbleLeft from "./img/bublina-nalevo.svg";
+import imgBubbleRight from "./img/bublina-napravo.svg";
+import imgBed from "./img/postylka.png";
+import imgCubes from "./img/kosticky.png";
+import imgSwing from "./img/houpacka.png";
 
 export const ChildPage = () => {
   return (
     <main>
       <section className="section-background-baby-home">
-        <nav>
-          <div className="swipe-button swipe-button--1">
-            <img
-              className="swipe-button__base"
-              src="img/posouvatko_zaklad.svg"
-              alt=""
-            ></img>
-            <img
-              className="swipe-button__home"
-              src="img/posouvatko_domu.svg"
-              alt=""
-            ></img>
-          </div>
+        <Navigation />
 
-          <div className="swipe-button swipe-button--2">
-            <img
-              className="swipe-button__base"
-              src="img/posouvatko_zaklad.svg"
-              alt=""
-            ></img>
-            <img
-              className="swipe-button__info"
-              src="img/posouvatko_info.svg"
-              alt=""
-            ></img>
-          </div>
-        </nav>
-
-        <a href="kocka-uvod.html">
+        <Link to="/zviratko">
           <img
             className="baby-home__img baby-home__img--1"
-            src="img/kocka_uvod.gif"
-            alt=""
+            src={imgCat}
+            alt="kočka"
           ></img>
-        </a>
-        <a href="panda-uvod.html">
+        </Link>
+        <Link to="/zviratko">
           <img
             className="baby-home__img baby-home__img--2"
-            src="img/panda_uvod.gif"
-            alt=""
+            src={imgPanda}
+            alt="panda"
           ></img>
-        </a>
-        <a href="tygr-uvod.html">
+        </Link>
+        <Link to="/zviratko">
           <img
             className="baby-home__img baby-home__img--3"
-            src="img/tygr_uvod.gif"
-            alt=""
+            src={imgTiger}
+            alt="tygr"
           ></img>
-        </a>
-        <img
-          className="baby-home__bubble baby-home__bubble--left"
-          src="img/bublina-nalevo.svg"
-          alt=""
-        ></img>
-        <img
-          className="baby-home__bubble baby-home__bubble--rotate"
-          src="img/bublina-napravo.svg"
-          alt=""
-        ></img>
-        <img
-          className="baby-home__bubble baby-home__bubble--right"
-          src="img/bublina-napravo.svg"
-          alt=""
-        ></img>
-        <img className="baby-home__bed" src="img/postylka.png" alt=""></img>
-        <img className="baby-home__cubes" src="img/kosticky.png" alt=""></img>
-        <img className="baby-home__swing" src="img/houpacka.png" alt=""></img>
+        </Link>
+        <img className="bubble bubble--left" src={imgBubbleLeft} alt="bublina" />
+        <img className="bubble bubble--rotate" src={imgBubbleRight} alt="bublina" />
+        <img className="bubble bubble--right" src={imgBubbleRight} alt="bublina" />
+        <img className="bed" src={imgBed} alt="postýlka" />
+        <img className="cubes" src={imgCubes} alt="kostičky" />
+        <img className="swing" src={imgSwing} alt="houpačka" />
       </section>
     </main>
   );

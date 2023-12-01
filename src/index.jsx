@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         element: <ChildPage />,
       },
       {
-        path: '/zviratka',
+        path: '/zviratko',
         element: <AnimalPage />,
       },
       {
