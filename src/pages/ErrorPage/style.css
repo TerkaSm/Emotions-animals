@@ -1,0 +1,19 @@
+.error {
+    text-align: center;
+    display: grid;
+    height: 100vh;
+}
+
+.error__content {
+    align-self: center;
+}
+
+.error__title {
+    font-family: "Life Savers", serif;
+    font-size: clamp(2.6rem, 5vw, 5rem);
+    font-weight: 700;
+}
+
+.error__text {
+    font-size: clamp(1rem, 3vw, 2rem);
+}
