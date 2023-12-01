@@ -1,5 +1,6 @@
 import './style.css';
 import { Link } from 'react-router-dom';
+import { FullscreenButton } from '../FullscreenButton';
 import imgSwipeBase from "./img/posouvatko_zaklad.svg"
 import imgSwipeHome from "./img/posouvatko_domu.svg"
 import imgSwipeInfo from "./img/posouvatko_info.svg"
@@ -21,6 +22,8 @@ export const Navigation = () => {
           ></img>
           </Link>
         </div>
+
+        <FullscreenButton />
 
         <div className="swipe-button swipe-button--2">
           <img

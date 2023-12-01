@@ -12,7 +12,7 @@ export default defineConfig({
     outDir: '../dist',
     modulePreload: false,
   },
-  plugins: [react()],
+  plugins: [react(), VitePWA(manifestForPlugIn)],
 });
 
 const manifestForPlugIn = {
@@ -52,6 +52,6 @@ const manifestForPlugIn = {
   display:"standalone",
   scope:'/',
   start_url:"/",
-  orientation:'portrait'
+  orientation:'landscape'
   }
 }

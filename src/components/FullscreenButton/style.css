@@ -1,0 +1,18 @@
+.full-screen-button {
+  position: absolute;
+  top: 5vmin;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Life Savers", serif;
+  padding: clamp(0.4rem, 1vw, 0.9rem) clamp(1rem, 3vw, 2rem);
+  font-size: clamp(.9rem, 2vw, 1.6rem);
+  background-color: #6755559e;
+  color: var(--secondary);
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.full-screen-button:hover {
+  background-color: #463c3c9a;
+}
