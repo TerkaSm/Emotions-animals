@@ -24,17 +24,17 @@ export const HomePage = () => {
           </div>
           <img
             className="home__img home__img--1"
-            src="img/zvirata/panda/panda_uvod.svg" 
+            src="assets/img/panda_uvod.svg"
             alt="panda"
           />
           <img
             className="home__img home__img--2"
-            src="img/zvirata/kocka/kocka_uvod.svg"
+            src="assets/img/kocka_uvod.svg"
             alt="kočka"
           />
           <img
             className="home__img home__img--3"
-            src="img/zvirata/tygr/tygr_uvod.svg" 
+            src="assets/img/tygr_uvod.svg"
             alt="tygr"
           />
         </section>

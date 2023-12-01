@@ -1,6 +1,6 @@
-import './style.css'
+import './style.css';
 
-export const DetskaTitulka = () => {
+export const ChildPage = () => {
   return (
     <main>
       <div className="audio-box">
