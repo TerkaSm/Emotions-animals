@@ -1,0 +1,33 @@
+.info {
+    max-width: 100%;
+    padding: 1.5rem;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .info__content {
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+  
+  .info__title {
+    font-family: "Life Savers", serif;
+    font-size: clamp(2.6rem, 5vw, 5rem);
+    font-weight: 700;
+  }
+  
+  .info__title-2 {
+    font-family: "Life Savers", serif;
+    font-size: clamp(2rem, 3vw, 3.8rem);
+    font-weight: 700;
+  }
+  
+  .info__text {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    line-height: 2;
+  }
+  
+  .info__list {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    line-height: 2;
+  }

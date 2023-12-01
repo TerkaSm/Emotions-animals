@@ -1,0 +1,35 @@
+/* SWIPE BUTTONY (posouvátka) */
+
+.swipe-button {
+    position: absolute;
+  }
+  
+  .swipe-button--1 {
+    position: absolute;
+    top: 5vmin;
+    left: 5vmin;
+  }
+  
+  .swipe-button--2 {
+    position: absolute;
+    top: 5vmin;
+    right: 5vmin;
+  }
+  
+  .swipe-button__base {
+    height: 10vmin;
+  }
+  
+  .swipe-button__home {
+    position: absolute;
+    height: 9vmin;
+    top: 0.5vmin;
+    left: 15vmin; /* bude se posouvat: left 1vmin */
+  }
+  
+  .swipe-button__info {
+    position: absolute;
+    height: 9vmin;
+    top: 0.5vmin;
+    right: 15vmin; /* bude se posouvat: right 1vmin */
+  }
