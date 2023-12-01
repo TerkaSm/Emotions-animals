@@ -34,7 +34,7 @@ export const HomePage = () => {
           />
           <img
             className="home__img home__img--3"
-            src="img/zvirata/tygr/tygr_uvod.svg"
+            src="img/zvirata/tygr/tygr_uvod.svg" 
             alt="tygr"
           />
         </section>
