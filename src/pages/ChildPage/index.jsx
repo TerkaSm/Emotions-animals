@@ -37,12 +37,12 @@ export const ChildPage = () => {
             alt="tygr"
           ></img>
         </Link>
-        <img className="bubble bubble--left" src={imgBubbleLeft} alt="bublina" />
-        <img className="bubble bubble--rotate" src={imgBubbleRight} alt="bublina" />
-        <img className="bubble bubble--right" src={imgBubbleRight} alt="bublina" />
-        <img className="bed" src={imgBed} alt="postýlka" />
-        <img className="cubes" src={imgCubes} alt="kostičky" />
-        <img className="swing" src={imgSwing} alt="houpačka" />
+        <img className="baby-home__bubble baby-home__bubble--left" src={imgBubbleLeft} alt="bublina" />
+        <img className="baby-home__bubble baby-home__bubble--rotate" src={imgBubbleRight} alt="bublina" />
+        <img className="baby-home__bubble baby-home__bubble--right" src={imgBubbleRight} alt="bublina" />
+        <img className="baby-home__bed" src={imgBed} alt="postýlka" />
+        <img className="baby-home__cubes" src={imgCubes} alt="kostičky" />
+        <img className="baby-home__swing" src={imgSwing} alt="houpačka" />
       </section>
     </main>
   );
