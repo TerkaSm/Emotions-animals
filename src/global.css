@@ -103,6 +103,10 @@ main {
   right: 5vmin;
 }
 
+.u-padding-bottom {
+  padding-bottom: 2rem;
+}
+
 /* ANIMACE */
 
 @keyframes pohyb-dolu {
