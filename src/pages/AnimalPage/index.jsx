@@ -1,8 +1,6 @@
-import { Navigation } from '../../components/Navigation';
-import './style.css';
+import {Navigation} from '../../components/Navigation'
+import './style.css'
 
 export const AnimalPage = () => {
-  return (
-    <Navigation />
-  )
-};
+	return <Navigation />
+}
