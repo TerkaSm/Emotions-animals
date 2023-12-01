@@ -1,5 +1,7 @@
 import './style.css';
-import { Link } from 'react-router-dom';
+import catImg from './img/cat.svg'
+import pandaImg from './img/panda.svg'
+import tigerImg from './img/tygr.svg'
 
 export const HomePage = () => {
   return (
@@ -24,17 +26,17 @@ export const HomePage = () => {
           </div>
           <img
             className="home__img home__img--1"
-            src="assets/img/panda_uvod.svg"
+            src={pandaImg}
             alt="panda"
           />
           <img
             className="home__img home__img--2"
-            src="assets/img/kocka_uvod.svg"
+            src={kockaImg}
             alt="kočka"
           />
           <img
             className="home__img home__img--3"
-            src="assets/img/tygr_uvod.svg"
+            src={tigerImg}
             alt="tygr"
           />
         </section>
