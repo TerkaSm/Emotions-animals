@@ -1,0 +1,84 @@
+.section-background-tiger {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(247, 247, 247, 0.1),
+        rgba(255, 255, 255, 0.1)
+      ),
+      url(../../assets/img/pozadi_tygr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+  }
+  
+  .img-tiger-intro {
+    height: 60vh;
+    position: absolute;
+    right: 9vmin;
+    bottom: -5vmin;
+  }
+  
+  .img-tiger-angry {
+    height: 80vh;
+    position: absolute;
+    right: -6vmin;
+    bottom: -18vmin;
+  }
+  
+  .img-tiger-breath {
+    height: 47vh;
+    position: absolute;
+    right: 20vmin;
+    bottom: 1vmin;
+  }
+  
+  .img-tiger-think {
+    height: 47vh;
+    position: absolute;
+    right: 10vmin;
+    bottom: 1vmin;
+  }
+  
+  /* tygr bubliny */
+  
+  .tiger-bubble {
+    position: absolute;
+    height: 24vh;
+  }
+  
+  .tiger-bubble--left {
+    bottom: 30vmin;
+    right: 68vmin;
+  }
+  
+  .tiger-bubble--rotate {
+    bottom: 53vmin;
+    right: 48vmin;
+    transform: rotate(10deg);
+  }
+  
+  .tiger-bubble--right {
+    bottom: 45vmin;
+    right: 9vmin;
+  }
+  
+  .tiger-cubes {
+    position: absolute;
+    height: 12vh;
+    bottom: 37vmin;
+    right: 70vmin;
+  }
+  
+  .tiger-cubes--2 {
+    position: absolute;
+    height: 12vh;
+    bottom: 60vmin;
+    right: 50vmin;
+  }
+  
+  .tiger-mum {
+    position: absolute;
+    height: 17vh;
+    bottom: 50vmin;
+    right: 13vmin;
+  }

@@ -1,0 +1,99 @@
+.section-background-panda {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(247, 247, 247, 0.3),
+        rgba(255, 255, 255, 0.3)
+      ),
+      url(../../assets/img/pozadi_panda.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: bottom right;
+  }
+  
+  .img-panda-intro {
+    height: 50vh;
+    position: absolute;
+    bottom: 7vmin;
+    right: 51vmin;
+  }
+  
+  .img-panda-sed {
+    height: 50vh;
+    position: absolute;
+    bottom: 7vmin;
+    right: 51vmin;
+  }
+  
+  .img-panda-breath {
+    height: 55vh;
+    position: absolute;
+    bottom: 7vmin;
+    right: 51vmin;
+  }
+  
+  .img-panda-think {
+    height: 45vh;
+    position: absolute;
+    bottom: 10vmin;
+    right: 57vmin;
+  }
+  
+  .img-panda-end {
+    height: 55vh;
+    position: absolute;
+    bottom: 10vmin;
+    right: 55vmin;
+  }
+  
+  .img-lenochod {
+    height: 35vh;
+    position: absolute;
+    bottom: 17vmin;
+    right: 16vmin;
+  }
+  
+  /* panda bubliny */
+  
+  .panda-bubble {
+    position: absolute;
+    height: 24vh;
+  }
+  
+  .panda-bubble--left {
+    bottom: 33vmin;
+    right: 99vmin;
+  }
+  
+  .panda-bubble--rotate {
+    bottom: 57vmin;
+    right: 81vmin;
+    transform: rotate(10deg);
+  }
+  
+  .panda-bubble--right {
+    bottom: 51vmin;
+    right: 36vmin;
+  }
+  
+  .panda-slide {
+    position: absolute;
+    height: 14vh;
+    bottom: 40vmin;
+    right: 104vmin;
+  }
+  
+  .panda- {
+    position: absolute;
+    height: 12vh;
+    bottom: 60vmin;
+    right: 50vmin;
+  }
+  
+  .panda-mum {
+    position: absolute;
+    height: 17vh;
+    bottom: 56vmin;
+    right: 40vmin;
+  }
+  
