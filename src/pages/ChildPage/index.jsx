@@ -15,15 +15,15 @@ export const ChildPage = () => {
 	const [current, setCurrent] = useState(0)
 
 	const onAudioEnded = () => {
-		if (current < config.length) setCurrent(current+1)
+		if (current < config.length -1) {
+			setCurrent(current + 1)
+		}
 	}
 
 	return (
 		<main>
 			<section className='section-background-baby-home'>
-				{config.map(
-					({audioSrc, id}, index) => index === current && <Audio key={id} src={audioSrc} onAudioEnded={onAudioEnded} />,
-				)}
+				<Audio src={config[current].audioSrc} onAudioEnded={onAudioEnded} />
 				<Navigation />
 
 				<Link to={`/zviratko/${ANIMALS.CAT}/${STEPS.INTRO}`}>

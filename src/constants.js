@@ -65,6 +65,8 @@ import tigerChoices3Audio from './assets/audio/tygr_zamysleni_3.mp3'
 import tigerChoicesEndAudio from './assets/audio/tygr_zamysleni_vyber.mp3'
 import tigerResolutionAudio from './assets/audio/tygr_zaver.mp3'
 
+import { DefaultStep } from './components/Steps/Default'
+
 export const ANIMALS = {
 	CAT: 'cat',
 	PANDA: 'panda',
@@ -89,6 +91,7 @@ export const FOLW_CONFIG = {
                 className: "img-cat-intro"
             },
             nextStep: STEPS.SITUATION,
+            renderStep: DefaultStep,
         },
         situation: {
             audio: catSituationAudio,
@@ -97,15 +100,34 @@ export const FOLW_CONFIG = {
                 className: "img-cat-fear"
             },
             nextStep: STEPS.BREATH,
+            renderStep: DefaultStep,
         },
         breath: {
-            
+            audio: catSituationAudio,
+            animation: {
+                src: catBreath1Audio,
+                className: "img-cat-breath"
+            },
+            nextStep: STEPS.CHOICES,
+            renderStep: null,
         },
         choices: {
-
+            audio: catSituationAudio,
+            animation: {
+                src: catThinkImg,
+                className: "img-cat-think"
+            },
+            nextStep: STEPS.RESOLUTION,
+            renderStep: null,
         },
         resolution: {
-
+            audio: catResolutionAudio,
+            animation: {
+                src: catIntroImg,
+                className: "img-cat-end"
+            },
+            nextStep: "STEPS.???",
+            renderStep: DefaultStep,
         }
 	},
 }

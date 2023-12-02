@@ -14,7 +14,7 @@ export const Audio = ({src,onAudioEnded}) => {
   }, [audioRef?.current]);
 
   return (
-    <audio ref={audioRef} onEnded={onAudioEnded}>
+    <audio ref={audioRef} onEnded={onAudioEnded} key={src}>
       <source src={src} type="audio/mp3" />
     </audio>
   );
