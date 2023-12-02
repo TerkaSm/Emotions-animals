@@ -25,6 +25,11 @@
     height: 9vmin;
     top: 0.5vmin;
     left: 15vmin; /* bude se posouvat: left 1vmin */
+    transition: translate .25s;
+  }
+
+  .moveLeft {
+    transform: translateX(-14vmin)
   }
   
   .swipe-button__info {
@@ -33,3 +38,5 @@
     top: 0.5vmin;
     right: 15vmin; /* bude se posouvat: right 1vmin */
   }
+
+  
