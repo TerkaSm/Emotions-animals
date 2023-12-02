@@ -83,13 +83,19 @@ export const FOLW_CONFIG = {
 	[ANIMALS.CAT]: {
 		id: ANIMALS.CAT,
         intro: {
-            animation: catIntroImg,
             audio: catIntroAudio,
+            animation: {
+                src: catIntroImg,
+                className: "img-cat-intro"
+            },
             nextStep: STEPS.SITUATION,
         },
         situation: {
-            animation: catFearImg,
             audio: catSituationAudio,
+            animation: {
+                src: catFearImg,
+                className: ""
+            },
             nextStep: STEPS.BREATH,
         },
         breath: {

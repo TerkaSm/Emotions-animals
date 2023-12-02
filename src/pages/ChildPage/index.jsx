@@ -17,11 +17,12 @@ export const ChildPage = () => {
 	const onAudioEnded = () => {
 		if (current < config.length) setCurrent(current+1)
 	}
+
 	return (
 		<main>
 			<section className='section-background-baby-home'>
 				{config.map(
-					({audioSrc}, index) => index === current && <Audio src={audioSrc} onAudioEnded={onAudioEnded} />,
+					({audioSrc, id}, index) => index === current && <Audio key={id} src={audioSrc} onAudioEnded={onAudioEnded} />,
 				)}
 				<Navigation />
 
@@ -35,11 +36,11 @@ export const ChildPage = () => {
 					<img className='baby-home__img baby-home__img--3' src={imgTiger} alt='tygr'></img>
 				</Link>
 				{config.map(
-					({bubble, imgAtBubble}, index) =>
+					({id, bubble, imgAtBubble}, index) =>
 						index <= current && (
 							<>
-								<img className={bubble.className} src={bubble.src} alt='bubble' />
-								<img className={imgAtBubble.className} src={imgAtBubble.src} alt='' />
+								<img key={id} className={bubble.className} src={bubble.src} alt='bubble' />
+								<img key={id} className={imgAtBubble.className} src={imgAtBubble.src} alt='' />
 							</>
 						),
 				)}
