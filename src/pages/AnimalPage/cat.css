@@ -1,0 +1,87 @@
+.section-background-cat {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../../assets/img/pozadi_kocka.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom left;
+}
+
+.img-cat-intro {
+	height: 45vh;
+	position: absolute;
+	bottom: 24vmin;
+	left: 63vmin;
+}
+
+.img-cat-fear {
+	height: 55vh;
+	position: absolute;
+	bottom: 19vmin;
+	left: 59vmin;
+}
+
+.img-cat-breath {
+	height: 55vh;
+	position: absolute;
+	bottom: 5vmin;
+	left: 59vmin;
+}
+
+.img-cat-think {
+	height: 55vh;
+	position: absolute;
+	bottom: 19vmin;
+	left: 58vmin;
+}
+
+.img-cat-end {
+	height: 55vh;
+	position: absolute;
+	bottom: 19vmin;
+	left: 59vmin;
+}
+
+/* kočka bubliny */
+
+.cat-bubble {
+	position: absolute;
+	height: 24vh;
+}
+
+.cat-bubble--left {
+	bottom: 48vmin;
+	left: 37vmin;
+}
+
+.cat-bubble--rotate {
+	bottom: 66vmin;
+	left: 55vmin;
+	transform: rotate(10deg);
+}
+
+.cat-bubble--right {
+	bottom: 53vmin;
+	left: 109vmin;
+}
+
+.cat-book {
+	position: absolute;
+	height: 8vh;
+	bottom: 55vmin;
+	left: 39vmin;
+}
+
+.cat-toy {
+	position: absolute;
+	height: 17vh;
+	bottom: 70vmin;
+	left: 60vmin;
+}
+
+.cat-mum {
+	position: absolute;
+	height: 17vh;
+	bottom: 57vmin;
+	left: 112vmin;
+}
