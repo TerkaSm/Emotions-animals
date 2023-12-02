@@ -11,12 +11,15 @@ import imgBed from './img/postylka.png'
 import imgCubes from './img/kosticky.png'
 import imgSwing from './img/houpacka.png'
 import { ANIMALS, STEPS } from '../../constants'
+import { Audio } from '../../components/Audio'
 
 export const ChildPage = () => {
 	return (
 		<main>
 			<section className='section-background-baby-home'>
 				<Navigation />
+
+				<Audio />
 
 				<Link to={`/zviratko/${ANIMALS.CAT}/${STEPS.INTRO}`}>
 					<img className='baby-home__img baby-home__img--1' src={imgCat} alt='kočka'></img>

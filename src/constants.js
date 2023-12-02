@@ -1,4 +1,3 @@
-
 import bubleLeft from './assets/img/bublina-nalevo.svg'
 import bubleRight from './assets/img/bublina-napravo.svg'
 import swing from './assets/img/houpacka.png'
@@ -61,24 +60,23 @@ import tigerChoices3 from './assets/audio/tygr_zamysleni_3.mp3'
 import tigerChoicesEnd from './assets/audio/tygr_zamysleni_vyber.mp3'
 import tigerResolution from './assets/audio/tygr_zaver.mp3'
 
-
-
 export const ANIMALS = {
-    CAT: "cat",
-    PANDA: "panda",
-    TIGER: "tiger",
+	CAT: 'cat',
+	PANDA: 'panda',
+	TIGER: 'tiger',
 }
 
 export const STEPS = {
-    INTRO: "intro",
-    SITUATION: "situation",
-    BREATH: "breath",
-    CHOICES: "choices",
-    RESOLUTION: "resolution"
+	INTRO: 'intro',
+	SITUATION: 'situation',
+	BREATH: 'breath',
+	CHOICES: 'choices',
+	RESOLUTION: 'resolution',
 }
 
 export const FOLW_CONFIG = {
-    [ANIMALS.CAT]: {
-        id: ANIMALS.CAT,
-    }
+	[ANIMALS.CAT]: {
+		id: ANIMALS.CAT,
+        step1: STEPS.INTRO,
+	},
 }
