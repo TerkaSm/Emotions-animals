@@ -25,7 +25,7 @@
     height: 9vmin;
     top: 0.5vmin;
     left: 15vmin; /* bude se posouvat: left 1vmin */
-    transition: translate .25s;
+    transition: transform .25s;
   }
 
   .moveLeft {
@@ -37,6 +37,10 @@
     height: 9vmin;
     top: 0.5vmin;
     right: 15vmin; /* bude se posouvat: right 1vmin */
+    transition: transform .25s;
   }
 
+  .moveRight {
+    transform: translateX(14vmin)
+  }
   
