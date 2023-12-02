@@ -94,7 +94,7 @@ export const FOLW_CONFIG = {
             audio: catSituationAudio,
             animation: {
                 src: catFearImg,
-                className: ""
+                className: "img-cat-fear"
             },
             nextStep: STEPS.BREATH,
         },

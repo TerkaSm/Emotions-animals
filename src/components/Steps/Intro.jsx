@@ -2,11 +2,10 @@ import { FOLW_CONFIG } from "../../constants"
 import { Audio } from "../Audio"
 import { useNavigate} from 'react-router-dom'
 
-export const Intro = ({animalId, stepId}) => {
-    const navigateTo = useNavigate()
+export const Intro = ({animalId, stepId,onAudioEnded}) => {
 
-    const {audio, animation: {src, className}} = FOLW_CONFIG[animalId] [stepId]
-    const onAudioEnded = () => navigateTo('/')
+    const {audio, animation: {src, className}, nextStep} = FOLW_CONFIG[animalId] [stepId]
+
     return (
         <> 
             <Audio src={audio} onAudioEnded={onAudioEnded}/>
