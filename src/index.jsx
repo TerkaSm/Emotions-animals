@@ -8,6 +8,7 @@ import {ChildPage} from './pages/ChildPage'
 import {InfoPage} from './pages/InfoPage'
 import {ErrorPage} from './pages/ErrorPage'
 
+
 const router = createBrowserRouter([
 	{
 		path: '/',
