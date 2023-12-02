@@ -1,17 +1,17 @@
 //img cat
-import catInhaleImg from './assets/img/kocka_nadech.gif'
+import catBreathImg from './assets/img/kocka_nadech.gif'
 import catFearImg from './assets/img/kocka_strach.gif'
 import catIntroImg from './assets/img/kocka_uvod.gif'
 import catThinkImg from './assets/img/kocka_zamysleni.gif'
 import catEndImg from './assets/img/kocka_zaver.gif'
 // img panda
-import pandaInhaleImg from './assets/img/panda_nadech.gif'
+import pandaBreathImg from './assets/img/panda_nadech.gif'
 import pandaCryImg from './assets/img/panda_plac.gif'
 import pandaIntroImg from './assets/img/panda_uvod.gif'
 import pandaThinkImg from './assets/img/panda_zamysleni.gif'
 import pandaEndImg from './assets/img/panda_zaver.gif'
 // img tiger
-import tigerInhaleImg from './assets/img/tygr_nadech.gif'
+import tigerBreathImg from './assets/img/tygr_nadech.gif'
 import tigerIntroImg from './assets/img/tygr_uvod.gif'
 import tigerAngryImg from './assets/img/tygr_vztek.gif'
 import tigerThinkImg from './assets/img/tygr_zamysleni.gif'
@@ -66,6 +66,7 @@ import tigerChoicesEndAudio from './assets/audio/tygr_zamysleni_vyber.mp3'
 import tigerResolutionAudio from './assets/audio/tygr_zaver.mp3'
 
 import { DefaultStep } from './components/Steps/Default'
+import { BreathStep } from './components/Steps/Breath'
 
 export const ANIMALS = {
 	CAT: 'cat',
@@ -103,13 +104,15 @@ export const FOLW_CONFIG = {
             renderStep: DefaultStep,
         },
         breath: {
-            audio: catSituationAudio,
+            audio: [
+                catBreath1Audio, catBreath2Audio, catBreath3Audio
+            ],
             animation: {
-                src: catBreath1Audio,
+                src: catBreathImg,
                 className: "img-cat-breath"
             },
             nextStep: STEPS.CHOICES,
-            renderStep: null,
+            renderStep: BreathStep,
         },
         choices: {
             audio: catSituationAudio,

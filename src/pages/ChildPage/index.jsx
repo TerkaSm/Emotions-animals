@@ -14,7 +14,6 @@ import imgBubbleRight from './img/bublina-napravo.svg'
 import imgBed from './img/postylka.png'
 import imgCubes from './img/kosticky.png'
 import imgSwing from './img/houpacka.png'
-import {ANIMALS, STEPS} from '../../constants'
 
 export const ChildPage = () => {
 	const [current, setCurrent] = useState(0)
