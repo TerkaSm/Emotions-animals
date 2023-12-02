@@ -3,10 +3,12 @@ import catImg from './img/kocka_home.svg'
 import pandaImg from './img/panda_home.svg'
 import tigerImg from './img/tygr_home.svg'
 import {ButtonPrimary, ButtonSecondary} from '../../components/Button'
+import { Audio } from '../../components/Audio'
 
 export const HomePage = () => {
 	return (
 		<div className='container'>
+			<Audio />
 			<main>
 				<section className='section section--color-1'>
 					<div className='home'>

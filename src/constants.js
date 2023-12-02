@@ -1,64 +1,69 @@
-import bubleLeft from './assets/img/bublina-nalevo.svg'
-import bubleRight from './assets/img/bublina-napravo.svg'
-import swing from './assets/img/houpacka.png'
-import book from './assets/img/knizka.png'
-import catInhale from './assets/img/kocka_nadech.gif'
-import catFear from './assets/img/kocka_strach.gif'
+//img cat
+import catInhaleImg from './assets/img/kocka_nadech.gif'
+import catFearImg from './assets/img/kocka_strach.gif'
 import catIntroImg from './assets/img/kocka_uvod.gif'
-import catThink from './assets/img/kocka_zamysleni.gif'
-import catEnd from './assets/img/kocka_zaver.gif'
-import cubes from './assets/img/kosticky.png'
-import sloth from './assets/img/lenochod.png'
-import mum from './assets/img/maminka.png'
-import bear from './assets/img/medvidek.png'
-import pandaInhale from './assets/img/panda_nadech.gif'
-import pandaCry from './assets/img/panda_plac.gif'
+import catThinkImg from './assets/img/kocka_zamysleni.gif'
+import catEndImg from './assets/img/kocka_zaver.gif'
+// img panda
+import pandaInhaleImg from './assets/img/panda_nadech.gif'
+import pandaCryImg from './assets/img/panda_plac.gif'
 import pandaIntroImg from './assets/img/panda_uvod.gif'
-import pandaEnd from './assets/img/panda_zaver.gif'
-import bed from './assets/img/postylka.png'
-import tigerInhale from './assets/img/tygr_nadech.gif'
+import pandaThinkImg from './assets/img/panda_zamysleni.gif'
+import pandaEndImg from './assets/img/panda_zaver.gif'
+// img tiger
+import tigerInhaleImg from './assets/img/tygr_nadech.gif'
 import tigerIntroImg from './assets/img/tygr_uvod.gif'
-import tigerAngry from './assets/img/tygr_vztek.gif'
-import tigerThink from './assets/img/tygr_zamysleni.gif'
+import tigerAngryImg from './assets/img/tygr_vztek.gif'
+import tigerThinkImg from './assets/img/tygr_zamysleni.gif'
+// bubbles
+import cubesImg from './assets/img/kosticky.png'
+import slothImg from './assets/img/lenochod.png'
+import mumImg from './assets/img/maminka.png'
+import bearImg from './assets/img/medvidek.png'
+import bedImg from './assets/img/postylka.png'
+import bubleLeftImg from './assets/img/bublina-nalevo.svg'
+import bubleRightImg from './assets/img/bublina-napravo.svg'
+import swingImg from './assets/img/houpacka.png'
+import bookImg from './assets/img/knizka.png'
 
-import catSituation from './assets/audio/kocka_emoce.mp3'
-import catBreath1 from './assets/audio/kocka_nadech_1.mp3'
-import catBreath2 from './assets/audio/kocka_nadech_2.mp3'
-import catBreath3 from './assets/audio/kocka_nadech_3.mp3'
-import catChildrenPage from './assets/audio/kocka_titulka.mp3'
-import catIntro from './assets/audio/kocka_uvod.mp3'
-import catChoicesIntro from './assets/audio/kocka_zamysleni_uvod.mp3'
-import catChoices1 from './assets/audio/kocka_zamysleni_1.mp3'
-import catChoices2 from './assets/audio/kocka_zamysleni_2.mp3'
-import catChoices3 from './assets/audio/kocka_zamysleni_3.mp3'
-import catChoicesEnd from './assets/audio/kocka_zamysleni_vyber.mp3'
-import catResolution from './assets/audio/kocka_zaver.mp3'
+//audio cat
+import catSituationAudio from './assets/audio/kocka_emoce.mp3'
+import catBreath1Audio from './assets/audio/kocka_nadech_1.mp3'
+import catBreath2Audio from './assets/audio/kocka_nadech_2.mp3'
+import catBreath3Audio from './assets/audio/kocka_nadech_3.mp3'
+import catIntroAudio from './assets/audio/kocka_uvod.mp3'
+import catChoicesIntroAudio from './assets/audio/kocka_zamysleni_uvod.mp3'
+import catChoices1Audio from './assets/audio/kocka_zamysleni_1.mp3'
+import catChoices2Audio from './assets/audio/kocka_zamysleni_2.mp3'
+import catChoices3Audio from './assets/audio/kocka_zamysleni_3.mp3'
+import catChoicesEndAudio from './assets/audio/kocka_zamysleni_vyber.mp3'
+import catResolutionAudio from './assets/audio/kocka_zaver.mp3'
 
+//audio panda
 //import pandaSituation from './assets/audio/panda_emoce.mp3'
-import pandaBreath1 from './assets/audio/panda_nadech_1.mp3'
-import pandaBreath2 from './assets/audio/panda_nadech_2.mp3'
-import pandaBreath3 from './assets/audio/panda_nadech_3.mp3'
-import pandaChildrenPage from './assets/audio/panda_titulka.mp3'
-import pandaIntro from './assets/audio/panda_uvod.mp3'
-import pandaChoicesIntro from './assets/audio/panda_zamysleni_uvod.mp3'
-import pandaChoices1 from './assets/audio/panda_zamysleni_1.mp3'
-import pandaChoices2 from './assets/audio/panda_zamysleni_2.mp3'
-import pandaChoices3 from './assets/audio/panda_zamysleni_3.mp3'
-import pandaChoicesEnd from './assets/audio/panda_zamysleni_vyber.mp3'
-import pandaResolution from './assets/audio/panda_zaver.mp3'
+import pandaBreath1Audio from './assets/audio/panda_nadech_1.mp3'
+import pandaBreath2Audio from './assets/audio/panda_nadech_2.mp3'
+import pandaBreath3Audio from './assets/audio/panda_nadech_3.mp3'
+import pandaIntroAudio from './assets/audio/panda_uvod.mp3'
+import pandaChoicesIntroAudio from './assets/audio/panda_zamysleni_uvod.mp3'
+import pandaChoices1Audio from './assets/audio/panda_zamysleni_1.mp3'
+import pandaChoices2Audio from './assets/audio/panda_zamysleni_2.mp3'
+import pandaChoices3Audio from './assets/audio/panda_zamysleni_3.mp3'
+import pandaChoicesEndAudio from './assets/audio/panda_zamysleni_vyber.mp3'
+import pandaResolutionAudio from './assets/audio/panda_zaver.mp3'
 
-import tigerSituation from './assets/audio/tygr_emoce_vztek.mp3'
-import tigerBreath1 from './assets/audio/tygr_nadech_1.mp3'
-import tigerBreath2 from './assets/audio/tygr_nadech_2.mp3'
-import tigerBreath3 from './assets/audio/tygr_nadech_3.mp3'
-import tigerChildrenPage from './assets/audio/tygr_titulka.mp3'
-import tigerIntro from './assets/audio/tygr_uvod.mp3'
-import tigerChoicesIntro from './assets/audio/tygr_zamysleni_uvod.mp3'
-import tigerChoices1 from './assets/audio/tygr_zamysleni_1.mp3'
-import tigerChoices2 from './assets/audio/tygr_zamysleni_2.mp3'
-import tigerChoices3 from './assets/audio/tygr_zamysleni_3.mp3'
-import tigerChoicesEnd from './assets/audio/tygr_zamysleni_vyber.mp3'
-import tigerResolution from './assets/audio/tygr_zaver.mp3'
+//audio tiger
+import tigerSituationAudio from './assets/audio/tygr_emoce_vztek.mp3'
+import tigerBreath1Audio from './assets/audio/tygr_nadech_1.mp3'
+import tigerBreath2Audio from './assets/audio/tygr_nadech_2.mp3'
+import tigerBreath3Audio from './assets/audio/tygr_nadech_3.mp3'
+import tigerIntroAudio from './assets/audio/tygr_uvod.mp3'
+import tigerChoicesIntroAudio from './assets/audio/tygr_zamysleni_uvod.mp3'
+import tigerChoices1Audio from './assets/audio/tygr_zamysleni_1.mp3'
+import tigerChoices2Audio from './assets/audio/tygr_zamysleni_2.mp3'
+import tigerChoices3Audio from './assets/audio/tygr_zamysleni_3.mp3'
+import tigerChoicesEndAudio from './assets/audio/tygr_zamysleni_vyber.mp3'
+import tigerResolutionAudio from './assets/audio/tygr_zaver.mp3'
 
 export const ANIMALS = {
 	CAT: 'cat',
@@ -77,6 +82,24 @@ export const STEPS = {
 export const FOLW_CONFIG = {
 	[ANIMALS.CAT]: {
 		id: ANIMALS.CAT,
-        step1: STEPS.INTRO,
+        intro: {
+            animation: catIntroImg,
+            audio: catIntroAudio,
+            nextStep: STEPS.SITUATION,
+        },
+        situation: {
+            animation: catFearImg,
+            audio: catSituationAudio,
+            nextStep: STEPS.BREATH,
+        },
+        breath: {
+            
+        },
+        choices: {
+
+        },
+        resolution: {
+
+        }
 	},
 }
