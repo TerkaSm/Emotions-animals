@@ -110,6 +110,10 @@ export const FOLW_CONFIG = {
             audio: [
                 catBreath1Audio, catBreath2Audio, catBreath3Audio
             ],
+            img: {
+                srcImg: catInhaleImgPng,
+                classNameImg: "img-cat-breath"
+            },
             animation: {
                 src: catBreathImg,
                 className: "img-cat-breath"
