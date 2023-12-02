@@ -4,8 +4,8 @@ import React from 'react'
 
 export const InfoPage = () => {
 	return (
-		<section className='info'>
-			<div className='info__content'>
+		<section className='info u-padding-bottom'>
+			<div className='info__content '>
 				<h1 className='info__title'>O projektu</h1>
 				<p className='info__text'>
 					Jsme tři kodérky, které chtějí změnit svou kariéru a naučit se něco nového. Náš projekt je
