@@ -38,6 +38,13 @@
     right: 10vmin;
     bottom: 1vmin;
   }
+
+  .img-tiger-end {
+    height: 60vh;
+    position: absolute;
+    right: 9vmin;
+    bottom: -5vmin;
+  }
   
   /* tygr bubliny */
   

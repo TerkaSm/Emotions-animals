@@ -28,6 +28,7 @@ import bubleLeftImg from './assets/img/bublina-nalevo.svg'
 import bubleRightImg from './assets/img/bublina-napravo.svg'
 import swingImg from './assets/img/houpacka.png'
 import bookImg from './assets/img/knizka.png'
+import slideImg from './assets/img/klouzacka.png'
 
 //audio cat
 import catSituationAudio from './assets/audio/kocka_emoce.mp3'
@@ -194,22 +195,53 @@ export const FOLW_CONFIG = {
 				className: 'img-tiger-breath',
 			},
 			gifDuration: 2330,
+			nextStep: STEPS.CHOICES,
+		},
+		choices: {
+			audios: [tigerChoicesIntroAudio, tigerChoices1Audio, tigerChoices2Audio, tigerChoices3Audio, tigerChoicesEndAudio],
+			bubbles: [
+				{
+					bubble: {
+						className:  'tiger-bubble tiger-bubble--left',
+						src: bubleLeftImg,
+					},
+					imgAtBubble: {
+						className: 'tiger-cubes',
+						src: cubesImg,
+					},
+				},
+				{
+					bubble: {
+						className: 'tiger-bubble tiger-bubble--rotate',
+						src: bubleLeftImg,
+					},
+					imgAtBubble: {
+						className: 'tiger-cubes--2',
+						src: cubesImg,
+					},
+				},
+				{
+					bubble: {
+						className: 'tiger-bubble tiger-bubble--right',
+						src: bubleRightImg,
+					},
+					imgAtBubble: {
+						className: 'tiger-mum',
+						src: mumImg,
+					},
+				},
+			],
+			animation: {
+				src: tigerThinkImg,
+				className: 'img-tiger-think',
+			},
 			nextStep: STEPS.RESOLUTION,
 		},
-		// choices: {
-		//     audio: catChoicesIntroAudio,
-		//     animation: {
-		//         src: catThinkImg,
-		//         className: "img-cat-think"
-		//     },
-		//     nextStep: STEPS.RESOLUTION,
-		//     renderep: STE,
-		// },
 		resolution: {
 			audio: tigerResolutionAudio,
 			animation: {
 				src: tigerIntroImg,
-				className: 'img-tiger-intro',
+				className: 'img-tiger-end',
 			},
 		},
 	},
@@ -242,17 +274,48 @@ export const FOLW_CONFIG = {
 				className: 'img-panda-breath',
 			},
 			gifDuration: 2772,
+			nextStep: STEPS.CHOICES,
+		},
+		choices: {
+			audios: [pandaChoicesIntroAudio, pandaChoices1Audio, pandaChoices2Audio, pandaChoices3Audio, pandaChoicesEndAudio],
+			bubbles: [
+				{
+					bubble: {
+						className:  'panda-bubble panda-bubble--left',
+						src: bubleLeftImg,
+					},
+					imgAtBubble: {
+						className: 'panda-slide',
+						src: slideImg,
+					},
+				},
+				{
+					bubble: {
+						className: 'panda-bubble panda-bubble--rotate',
+						src: bubleLeftImg,
+					},
+					imgAtBubble: {
+						className: '',
+						src: '',
+					},
+				},
+				{
+					bubble: {
+						className: 'panda-bubble panda-bubble--right',
+						src: bubleRightImg,
+					},
+					imgAtBubble: {
+						className: 'panda-mum',
+						src: mumImg,
+					},
+				},
+			],
+			animation: {
+				src: pandaThinkImg,
+				className: 'img-panda-think',
+			},
 			nextStep: STEPS.RESOLUTION,
 		},
-		// choices: {
-		//     audio: catChoicesIntroAudio,
-		//     animation: {
-		//         src: catThinkImg,
-		//         className: "img-cat-think"
-		//     },
-		//     nextStep: STEPS.RESOLUTION,
-		//     renderep: STE,
-		// },
 		resolution: {
 			audio: pandaResolutionAudio,
 			animation: {

@@ -17,7 +17,12 @@ export const AnimalPage = () => {
 		nextStep,
 	} = FOLW_CONFIG[animalId][stepId]
 
-	const redirectToNextStep = () => navigateTo(stepId === STEPS.RESOLUTION ? '/' : `/zviratko/${animalId}/${nextStep}`)
+	const redirectToNextStep = () =>
+		navigateTo(
+			stepId === STEPS.RESOLUTION
+				? '/'
+				: `/zviratko/${animalId}/${nextStep}`,
+		)
 
 	const props = {animalId, stepId, redirectToNextStep}
 
@@ -26,7 +31,7 @@ export const AnimalPage = () => {
 			case STEPS.BREATH:
 				return <BreathStep {...props} />
 			case STEPS.CHOICES:
-				return 	<ChoicesStep {...props} />
+				return <ChoicesStep {...props} />
 			default:
 				return <DefaultStep {...props} />
 		}
@@ -35,7 +40,9 @@ export const AnimalPage = () => {
 	return (
 		<>
 			<Navigation />
-			<section className={`section-background-${animalId}`}>{getComponent()}</section>
+			<section className={`section-background-${animalId}`}>
+				{getComponent()}
+			</section>
 		</>
 	)
 }
