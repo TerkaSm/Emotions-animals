@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@700&display=swap');
 
 :root {
-	--background-color: #efe70e;
-  /* --background-color: #47929c; */
+	--background-color: #47929c;
 	--primary-color: #675555;
 	--primary-color-hover: #8bc343;
 	--secondary-color: #fff;
