@@ -95,7 +95,6 @@ export const FOLW_CONFIG = {
                 className: "img-cat-intro"
             },
             nextStep: STEPS.SITUATION,
-            renderStep: DefaultStep,
         },
         situation: {
             audio: catSituationAudio,
@@ -104,22 +103,21 @@ export const FOLW_CONFIG = {
                 className: "img-cat-fear"
             },
             nextStep: STEPS.BREATH,
-            renderStep: DefaultStep,
         },
         breath: {
             audio: [
                 catBreath1Audio, catBreath2Audio, catBreath3Audio
             ],
             img: {
-                srcImg: catInhaleImgPng,
-                classNameImg: "img-cat-breath"
+                src: catInhaleImgPng,
+                className: "img-cat-breath"
             },
             animation: {
                 src: catBreathImg,
                 className: "img-cat-breath"
             },
+            gifDuration: 3180,
             nextStep: STEPS.CHOICES,
-            renderStep: BreathStep,
         },
         choices: {
             audio: catSituationAudio,
@@ -137,7 +135,6 @@ export const FOLW_CONFIG = {
                 className: "img-cat-end"
             },
             nextStep: "STEPS.???",
-            renderStep: DefaultStep,
         }
 	},
 }
