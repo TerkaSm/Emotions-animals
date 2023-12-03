@@ -43,7 +43,7 @@ import catChoicesEndAudio from './assets/audio/kocka_zamysleni_vyber.mp3'
 import catResolutionAudio from './assets/audio/kocka_zaver.mp3'
 
 //audio panda
-//import pandaSituationAudio from './assets/audio/panda_emoce.mp3'
+import pandaSituationAudio from './assets/audio/panda_emoce.mp3'
 import pandaBreath1Audio from './assets/audio/panda_nadech_1.mp3'
 import pandaBreath2Audio from './assets/audio/panda_nadech_2.mp3'
 import pandaBreath3Audio from './assets/audio/panda_nadech_3.mp3'
@@ -197,7 +197,7 @@ export const FOLW_CONFIG = {
             nextStep: STEPS.SITUATION,
         },
         situation: {
-            audio: pandaIntroAudio,
+            audio: pandaSituationAudio,
             animation: {
                 src: pandaEmotionImg,
                 className: "img-panda-emotion"
