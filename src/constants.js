@@ -1,13 +1,13 @@
 //img cat
 import catBreathImg from './assets/img/kocka_nadech.gif'
-import catFearImg from './assets/img/kocka_strach.gif'
+import catEmotionImg from './assets/img/kocka_strach.gif'
 import catIntroImg from './assets/img/kocka_uvod.gif'
 import catThinkImg from './assets/img/kocka_zamysleni.gif'
 import catEndImg from './assets/img/kocka_zaver.gif'
 import catInhaleImgPng from './assets/img/kocka_nadech.png'
 // img panda
 import pandaBreathImg from './assets/img/panda_nadech.gif'
-import pandaCryImg from './assets/img/panda_plac.gif'
+import pandaEmotionImg from './assets/img/panda_plac.gif'
 import pandaIntroImg from './assets/img/panda_uvod.gif'
 import pandaThinkImg from './assets/img/panda_zamysleni.gif'
 import pandaEndImg from './assets/img/panda_zaver.gif'
@@ -15,7 +15,7 @@ import pandaInhaleImgPng from './assets/img/panda_nadech.png'
 // img tiger
 import tigerBreathImg from './assets/img/tygr_nadech.gif'
 import tigerIntroImg from './assets/img/tygr_uvod.gif'
-import tigerAngryImg from './assets/img/tygr_vztek.gif'
+import tigerEmotionImg from './assets/img/tygr_vztek.gif'
 import tigerThinkImg from './assets/img/tygr_zamysleni.gif'
 import tigerInhaleImgPng from './assets/img/tygr_nadech.png'
 // bubbles
@@ -43,7 +43,7 @@ import catChoicesEndAudio from './assets/audio/kocka_zamysleni_vyber.mp3'
 import catResolutionAudio from './assets/audio/kocka_zaver.mp3'
 
 //audio panda
-//import pandaSituation from './assets/audio/panda_emoce.mp3'
+//import pandaSituationAudio from './assets/audio/panda_emoce.mp3'
 import pandaBreath1Audio from './assets/audio/panda_nadech_1.mp3'
 import pandaBreath2Audio from './assets/audio/panda_nadech_2.mp3'
 import pandaBreath3Audio from './assets/audio/panda_nadech_3.mp3'
@@ -99,8 +99,8 @@ export const FOLW_CONFIG = {
         situation: {
             audio: catSituationAudio,
             animation: {
-                src: catFearImg,
-                className: "img-cat-fear"
+                src: catEmotionImg,
+                className: "img-cat-emotion"
             },
             nextStep: STEPS.BREATH,
         },
@@ -117,24 +117,123 @@ export const FOLW_CONFIG = {
                 className: "img-cat-breath"
             },
             gifDuration: 3180,
-            nextStep: STEPS.CHOICES,
-        },
-        choices: {
-            audio: catChoicesIntroAudio,
-            animation: {
-                src: catThinkImg,
-                className: "img-cat-think"
-            },
             nextStep: STEPS.RESOLUTION,
-            renderStep: null,
         },
+        // choices: {
+        //     audio: catChoicesIntroAudio,
+        //     animation: {
+        //         src: catThinkImg,
+        //         className: "img-cat-think"
+        //     },
+        //     nextStep: STEPS.RESOLUTION,
+        //     renderep: STE,
+        // },
         resolution: {
             audio: catResolutionAudio,
             animation: {
-                src: catIntroImg,
-                className: "img-cat-breath"
+                src: catEndImg,
+                className: "img-cat-end"
             },
-            nextStep: "STEPS.???",
+        }
+	},
+    [ANIMALS.TIGER]: {
+		id: ANIMALS.TIGER,
+        intro: {
+            audio: tigerIntroAudio,
+            animation: {
+                src: tigerIntroImg,
+                className: "img-tiger-intro"
+            },
+            nextStep: STEPS.SITUATION,
+        },
+        situation: {
+            audio: tigerSituationAudio,
+            animation: {
+                src: tigerEmotionImg,
+                className: "img-tiger-emotion"
+            },
+            nextStep: STEPS.BREATH,
+        },
+        breath: {
+            audio: [
+                tigerBreath1Audio, tigerBreath2Audio, tigerBreath3Audio
+            ],
+            img: {
+                src: tigerInhaleImgPng,
+                className: "img-tiger-breath"
+            },
+            animation: {
+                src: tigerBreathImg,
+                className: "img-tiger-breath"
+            },
+            gifDuration: 2330,
+            nextStep: STEPS.RESOLUTION,
+        },
+        // choices: {
+        //     audio: catChoicesIntroAudio,
+        //     animation: {
+        //         src: catThinkImg,
+        //         className: "img-cat-think"
+        //     },
+        //     nextStep: STEPS.RESOLUTION,
+        //     renderep: STE,
+        // },
+        resolution: {
+            audio: tigerResolutionAudio,
+            animation: {
+                src: tigerIntroImg,
+                className: "img-tiger-intro"
+            },
+        }
+	},
+    [ANIMALS.PANDA]: {
+		id: ANIMALS.PANDA,
+        intro: {
+            audio: pandaIntroAudio,
+            animation: {
+                src: pandaIntroImg,
+                className: "img-panda-intro"
+            },
+            nextStep: STEPS.SITUATION,
+        },
+        situation: {
+            audio: pandaBreath1Audiov,
+            animation: {
+                src: pandaEmotionImg,
+                className: "img-panda-emotion"
+            },
+            nextStep: STEPS.BREATH,
+        },
+        breath: {
+            audio: [
+                pandaBreath1Audio, pandaBreath2Audio, pandaBreath3Audio
+            ],
+            img: {
+                src: pandaInhaleImgPng,
+                className: "img-panda-breath"
+            },
+            animation: {
+                src: pandaBreathImg,
+                className: "img-panda-breath"
+            },
+            gifDuration: 2772,
+            nextStep: STEPS.RESOLUTION,
+        },
+        // choices: {
+        //     audio: catChoicesIntroAudio,
+        //     animation: {
+        //         src: catThinkImg,
+        //         className: "img-cat-think"
+        //     },
+        //     nextStep: STEPS.RESOLUTION,
+        //     renderep: STE,
+        // },
+        resolution: {
+            audio: pandaResolutionAudio,
+            animation: {
+                src: pandaEndImg,
+                className: "img-panda-end"
+            },
         }
 	},
 }
