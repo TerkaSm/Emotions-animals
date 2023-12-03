@@ -1,6 +1,6 @@
 .section-background-baby-home {
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   background-image: linear-gradient(
       rgba(247, 247, 247, 0.2),
       rgba(255, 255, 255, 0.2)

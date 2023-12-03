@@ -1,6 +1,6 @@
 .section-background-panda {
-	width: 100vw;
-	height: 100vh;
+	width: 100dvw;
+	height: 100dvh;
 	background-image: linear-gradient(rgba(247, 247, 247, 0.3), rgba(255, 255, 255, 0.3)),
 		url(../../assets/img/pozadi_panda.jpg);
 	background-repeat: no-repeat;
