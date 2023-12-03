@@ -6,23 +6,25 @@ import { useNavigate} from 'react-router-dom'
 export const BreathStep = ({animalId, stepId, redirectToNextStep}) => {
 	const [audioIndex, setAudioIndex] = useState(0)
     const [showAnimation, setShowAnimation] = useState(false)
+     
 
     const {audio, img, animation, gifDuration, nextStep} = FOLW_CONFIG[animalId][stepId]
 
     const startAnimation = () => {
         setShowAnimation(true)
+        if (audioIndex < 2) setAudioIndex(audioIndex + 1)
+        setAudioIndex(audioIndex + 1)
         setTimeout(() => {
             setShowAnimation(false)
-            setAudioIndex(audioIndex + 1)
+            if (audioIndex === 2) redirectToNextStep()
         }, gifDuration)
     }
-
 
     const imgProps = showAnimation ? animation : img
 
     return (
         <> 
-            <Audio src={audio[audioIndex]}/>
+            {!showAnimation && <Audio src={audio[audioIndex]}/>}
             <img onClick={startAnimation} {...imgProps}/>
         </>
     )

@@ -13,16 +13,26 @@ export const AnimalPage = () => {
 	const navigateTo = useNavigate()
     const {audio, animation: {src, className}, nextStep} = FOLW_CONFIG[animalId] [stepId]
 
-	// const {back} = FOLW_CONFIG[animalId]
     const redirectToNextStep = () => navigateTo(`/zviratko/${animalId}/${nextStep}`)
 
 	const props = { animalId, stepId, redirectToNextStep}
+
+	const getComponent = () => {
+        switch (stepId) {
+            case STEPS.BREATH:
+                return <BreathStep {...props} />
+            case STEPS.CHOICES:
+                return <div>Choices component</div>
+            default:
+                return <DefaultStep {...props} />
+        }
+    }
 
 	return (
 		<>
 		<Navigation />
 		<section className={`section-background-${animalId}`} >
-			{stepId === STEPS.BREATH ? <BreathStep {...props}/> : <DefaultStep {...props} />}
+			{getComponent()}
 		</section>
 		</>
 		)

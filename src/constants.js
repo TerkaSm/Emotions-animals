@@ -120,7 +120,7 @@ export const FOLW_CONFIG = {
             nextStep: STEPS.CHOICES,
         },
         choices: {
-            audio: catSituationAudio,
+            audio: catChoicesIntroAudio,
             animation: {
                 src: catThinkImg,
                 className: "img-cat-think"
@@ -132,7 +132,7 @@ export const FOLW_CONFIG = {
             audio: catResolutionAudio,
             animation: {
                 src: catIntroImg,
-                className: "img-cat-end"
+                className: "img-cat-breath"
             },
             nextStep: "STEPS.???",
         }
