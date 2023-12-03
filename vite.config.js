@@ -19,9 +19,9 @@ const manifestForPlugIn = {
   registerType:'prompt',
   includeAssests:['favicon.ico', "apple-touc-icon.png", "masked-icon.svg"],
   manifest:{
-    name:"React-vite-app",
-    short_name:"react-vite-app",
-    description:"I am a simple vite app",
+    name:"Zastav se",
+    short_name:"Zastav se",
+    description:"Hra pro děti na zvládání emocí",
     icons:[{
       src: './public/android-chrome-192x192.png',
       sizes:'192x192',

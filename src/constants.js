@@ -256,7 +256,7 @@ export const FOLW_CONFIG = {
 			nextStep: STEPS.SITUATION,
 		},
 		situation: {
-			audio: pandaIntroAudio,
+			audio: pandaSituationAudio,
 			animation: {
 				src: pandaEmotionImg,
 				className: 'img-panda-emotion',
