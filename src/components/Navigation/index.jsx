@@ -4,7 +4,7 @@ import imgSwipeBase from './img/posouvatko_zaklad.svg'
 import imgSwipeHome from './img/posouvatko_domu.svg'
 import imgSwipeInfo from './img/posouvatko_info.svg'
 import {useSwipeable} from 'react-swipeable'
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 
 
@@ -20,20 +20,6 @@ export const Navigation = () => {
   ( navigator.msMaxTouchPoints > 0 ))
 
 
-	// useEffect(() => {
-  //   setIsTouchScreen()
-	// 	// const handleResize = () => {
-	// 	// 	setIsDesktop(window.innerWidth > 935)
-	// 	// }
-	// 	// if (typeof window !== 'undefined') {
-	// 	// 	window.addEventListener('resize', handleResize)
-	// 	// 	return () => {
-	// 	// 		window.removeEventListener('resize', handleResize)
-	// 	// 	}
-	// 	// }
-	// }, [])
-
-
 	const handleEvent = (url) => {
 		setIsToggled({
       home: url === '/',
@@ -44,12 +30,12 @@ export const Navigation = () => {
 		}, 350)
 	}
 	const handleToggle = (url) => {
-		if (IsTouchScreen) {
+		if (!IsTouchScreen) {
 			handleEvent(url)
 		}
 	}
 	const handleSwiped = (url) => {
-		if (!IsTouchScreen) {
+		if (IsTouchScreen) {
 			handleEvent(url)
 		}
 	}
