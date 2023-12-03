@@ -68,8 +68,8 @@ import tigerChoices3Audio from './assets/audio/tygr_zamysleni_3.mp3'
 import tigerChoicesEndAudio from './assets/audio/tygr_zamysleni_vyber.mp3'
 import tigerResolutionAudio from './assets/audio/tygr_zaver.mp3'
 
-import { DefaultStep } from './components/Steps/Default'
-import { BreathStep } from './components/Steps/Breath'
+import {DefaultStep} from './components/Steps/Default'
+import {BreathStep} from './components/Steps/Breath'
 
 export const ANIMALS = {
 	CAT: 'cat',
@@ -88,152 +88,177 @@ export const STEPS = {
 export const FOLW_CONFIG = {
 	[ANIMALS.CAT]: {
 		id: ANIMALS.CAT,
-        intro: {
-            audio: catIntroAudio,
-            animation: {
-                src: catIntroImg,
-                className: "img-cat-intro"
-            },
-            nextStep: STEPS.SITUATION,
-        },
-        situation: {
-            audio: catSituationAudio,
-            animation: {
-                src: catEmotionImg,
-                className: "img-cat-emotion"
-            },
-            nextStep: STEPS.BREATH,
-        },
-        breath: {
-            audio: [
-                catBreath1Audio, catBreath2Audio, catBreath3Audio
-            ],
-            img: {
-                src: catInhaleImgPng,
-                className: "img-cat-breath"
-            },
-            animation: {
-                src: catBreathImg,
-                className: "img-cat-breath"
-            },
-            gifDuration: 3180,
-            nextStep: STEPS.RESOLUTION,
-        },
-        // choices: {
-        //     audio: catChoicesIntroAudio,
-        //     animation: {
-        //         src: catThinkImg,
-        //         className: "img-cat-think"
-        //     },
-        //     nextStep: STEPS.RESOLUTION,
-        //     renderep: STE,
-        // },
-        resolution: {
-            audio: catResolutionAudio,
-            animation: {
-                src: catEndImg,
-                className: "img-cat-end"
-            },
-        }
+		intro: {
+			audio: catIntroAudio,
+			animation: {
+				src: catIntroImg,
+				className: 'img-cat-intro',
+			},
+			nextStep: STEPS.SITUATION,
+		},
+		situation: {
+			audio: catSituationAudio,
+			animation: {
+				src: catEmotionImg,
+				className: 'img-cat-emotion',
+			},
+			nextStep: STEPS.BREATH,
+		},
+		breath: {
+			audio: [catBreath1Audio, catBreath2Audio, catBreath3Audio],
+			img: {
+				src: catInhaleImgPng,
+				className: 'img-cat-breath',
+			},
+			animation: {
+				src: catBreathImg,
+				className: 'img-cat-breath',
+			},
+			gifDuration: 3180,
+			nextStep: STEPS.CHOICES,
+		},
+		choices: {
+			audios: [catChoicesIntroAudio, catChoices1Audio, catChoices2Audio, catChoices3Audio, catChoicesEndAudio],
+			bubbles: [
+				{
+					bubble: {
+						className: 'cat-bubble cat-bubble--left',
+						src: bubleLeftImg,
+					},
+					imgAtBubble: {
+						className: 'cat-book',
+						src: bookImg,
+					},
+				},
+				{
+					bubble: {
+						className: 'cat-bubble cat-bubble--rotate',
+						src: bubleLeftImg,
+					},
+					imgAtBubble: {
+						className: 'cat-toy',
+						src: bearImg,
+					},
+				},
+				{
+					bubble: {
+						className: 'cat-bubble cat-bubble--right',
+						src: bubleRightImg,
+					},
+					imgAtBubble: {
+						className: 'cat-mum',
+						src: mumImg,
+					},
+				},
+			],
+			animation: {
+				src: catThinkImg,
+				className: 'img-cat-think',
+			},
+			nextStep: STEPS.RESOLUTION,
+		},
+		resolution: {
+			audio: catResolutionAudio,
+			animation: {
+				src: catEndImg,
+				className: 'img-cat-end',
+			},
+		},
 	},
-    [ANIMALS.TIGER]: {
+	[ANIMALS.TIGER]: {
 		id: ANIMALS.TIGER,
-        intro: {
-            audio: tigerIntroAudio,
-            animation: {
-                src: tigerIntroImg,
-                className: "img-tiger-intro"
-            },
-            nextStep: STEPS.SITUATION,
-        },
-        situation: {
-            audio: tigerSituationAudio,
-            animation: {
-                src: tigerEmotionImg,
-                className: "img-tiger-emotion"
-            },
-            nextStep: STEPS.BREATH,
-        },
-        breath: {
-            audio: [
-                tigerBreath1Audio, tigerBreath2Audio, tigerBreath3Audio
-            ],
-            img: {
-                src: tigerInhaleImgPng,
-                className: "img-tiger-breath"
-            },
-            animation: {
-                src: tigerBreathImg,
-                className: "img-tiger-breath"
-            },
-            gifDuration: 2330,
-            nextStep: STEPS.RESOLUTION,
-        },
-        // choices: {
-        //     audio: catChoicesIntroAudio,
-        //     animation: {
-        //         src: catThinkImg,
-        //         className: "img-cat-think"
-        //     },
-        //     nextStep: STEPS.RESOLUTION,
-        //     renderep: STE,
-        // },
-        resolution: {
-            audio: tigerResolutionAudio,
-            animation: {
-                src: tigerIntroImg,
-                className: "img-tiger-intro"
-            },
-        }
+		intro: {
+			audio: tigerIntroAudio,
+			animation: {
+				src: tigerIntroImg,
+				className: 'img-tiger-intro',
+			},
+			nextStep: STEPS.SITUATION,
+		},
+		situation: {
+			audio: tigerSituationAudio,
+			animation: {
+				src: tigerEmotionImg,
+				className: 'img-tiger-emotion',
+			},
+			nextStep: STEPS.BREATH,
+		},
+		breath: {
+			audio: [tigerBreath1Audio, tigerBreath2Audio, tigerBreath3Audio],
+			img: {
+				src: tigerInhaleImgPng,
+				className: 'img-tiger-breath',
+			},
+			animation: {
+				src: tigerBreathImg,
+				className: 'img-tiger-breath',
+			},
+			gifDuration: 2330,
+			nextStep: STEPS.RESOLUTION,
+		},
+		// choices: {
+		//     audio: catChoicesIntroAudio,
+		//     animation: {
+		//         src: catThinkImg,
+		//         className: "img-cat-think"
+		//     },
+		//     nextStep: STEPS.RESOLUTION,
+		//     renderep: STE,
+		// },
+		resolution: {
+			audio: tigerResolutionAudio,
+			animation: {
+				src: tigerIntroImg,
+				className: 'img-tiger-intro',
+			},
+		},
 	},
-    [ANIMALS.PANDA]: {
+	[ANIMALS.PANDA]: {
 		id: ANIMALS.PANDA,
-        intro: {
-            audio: pandaIntroAudio,
-            animation: {
-                src: pandaIntroImg,
-                className: "img-panda-intro"
-            },
-            nextStep: STEPS.SITUATION,
-        },
-        situation: {
-            audio: pandaIntroAudio,
-            animation: {
-                src: pandaEmotionImg,
-                className: "img-panda-emotion"
-            },
-            nextStep: STEPS.BREATH,
-        },
-        breath: {
-            audio: [
-                pandaBreath1Audio, pandaBreath2Audio, pandaBreath3Audio
-            ],
-            img: {
-                src: pandaInhaleImgPng,
-                className: "img-panda-breath"
-            },
-            animation: {
-                src: pandaBreathImg,
-                className: "img-panda-breath"
-            },
-            gifDuration: 2772,
-            nextStep: STEPS.RESOLUTION,
-        },
-        // choices: {
-        //     audio: catChoicesIntroAudio,
-        //     animation: {
-        //         src: catThinkImg,
-        //         className: "img-cat-think"
-        //     },
-        //     nextStep: STEPS.RESOLUTION,
-        //     renderep: STE,
-        // },
-        resolution: {
-            audio: pandaResolutionAudio,
-            animation: {
-                src: pandaEndImg,
-                className: "img-panda-end"
-            },
-        }
+		intro: {
+			audio: pandaIntroAudio,
+			animation: {
+				src: pandaIntroImg,
+				className: 'img-panda-intro',
+			},
+			nextStep: STEPS.SITUATION,
+		},
+		situation: {
+			audio: pandaIntroAudio,
+			animation: {
+				src: pandaEmotionImg,
+				className: 'img-panda-emotion',
+			},
+			nextStep: STEPS.BREATH,
+		},
+		breath: {
+			audio: [pandaBreath1Audio, pandaBreath2Audio, pandaBreath3Audio],
+			img: {
+				src: pandaInhaleImgPng,
+				className: 'img-panda-breath',
+			},
+			animation: {
+				src: pandaBreathImg,
+				className: 'img-panda-breath',
+			},
+			gifDuration: 2772,
+			nextStep: STEPS.RESOLUTION,
+		},
+		// choices: {
+		//     audio: catChoicesIntroAudio,
+		//     animation: {
+		//         src: catThinkImg,
+		//         className: "img-cat-think"
+		//     },
+		//     nextStep: STEPS.RESOLUTION,
+		//     renderep: STE,
+		// },
+		resolution: {
+			audio: pandaResolutionAudio,
+			animation: {
+				src: pandaEndImg,
+				className: 'img-panda-end',
+			},
+		},
 	},
 }

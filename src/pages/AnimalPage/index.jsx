@@ -6,6 +6,7 @@ import './cat.css'
 import './panda.css'
 import './tiger.css'
 import {useParams, useNavigate} from 'react-router-dom'
+import {ChoicesStep} from '../../components/Steps/Choices'
 
 export const AnimalPage = () => {
 	const {animalId, stepId} = useParams()
@@ -25,7 +26,7 @@ export const AnimalPage = () => {
 			case STEPS.BREATH:
 				return <BreathStep {...props} />
 			case STEPS.CHOICES:
-				return <div>Choices component</div>
+				return 	<ChoicesStep {...props} />
 			default:
 				return <DefaultStep {...props} />
 		}
