@@ -12,7 +12,7 @@ export const HomePage = () => {
 		<div className='container'>
 			<Audio />
 			<PopUpBubblePortrait />
-			{/* <PopUpBubbleLandscape /> */}
+			<PopUpBubbleLandscape />
 			<main>
 				<section className='section section--color-1'>
 					<div className='home'>

@@ -3,7 +3,7 @@
     width: 100vw;
     height: 100vh;
     z-index: 500;
-    background-color: rgba(0, 0, 0, 0.833);
+    background-color: rgba(0, 0, 0, 0.855);
     display: grid;
 }
 
@@ -56,9 +56,6 @@
     font-size: clamp(1.2rem, 3vw, 1.8rem);
     text-align: center;
 }
-
-
-
 
 .hidden {
     display: none;

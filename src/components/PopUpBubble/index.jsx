@@ -54,14 +54,19 @@ export const PopUpBubblePortrait = () => {
 
 
 export const PopUpBubbleLandscape = () => {
+    const [displayPopup, setDisplayPopup] = useState(false)
+
+    const handleClick = () => {
+        setDisplayPopup(!displayPopup)
+    }
 
 	return (
-		<div className='filter'>
+		<div className={!displayPopup ? "filter" : "filter hidden"}>
             <div className='popup-bubble popup-bubble--2'>
                 <img className='popup-bubble__img popup-bubble__img--portrait' src={PopUpBubbleLandscapeImg} alt="vyskakovací okno" />
                 <div className='popup-bubble__content popup-bubble__content--2'>
                     <p className='popup-bubble__text popup-bubble__text--2'>...a potvrďte otevření na plnou obrazovku</p>
-                    <div className='u-wrapp-bottom'>
+                    <div onClick={handleClick} className='u-wrapp-bottom'>
                         <FullscreenButton />
                     </div>
                 </div>
