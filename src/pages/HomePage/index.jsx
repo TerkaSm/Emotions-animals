@@ -11,7 +11,7 @@ export const HomePage = () => {
 	return (
 		<div className='container'>
 			<Audio />
-			{/* <PopUpBubblePortrait /> */}
+			<PopUpBubblePortrait />
 			{/* <PopUpBubbleLandscape /> */}
 			<main>
 				<section className='section section--color-1'>
