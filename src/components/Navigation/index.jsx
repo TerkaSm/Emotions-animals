@@ -60,7 +60,10 @@ export const Navigation = () => {
 				></img>
 			</div>
 
-			<FullscreenButton />
+			<div className='u-wrapp-center'>
+				<FullscreenButton />
+			</div>
+
 			<div className='swipe-button swipe-button--2' {...handlers2} onClick={() => handleToggle('/info')}>
 				<img
 					className='swipe-button__base'

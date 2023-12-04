@@ -1,0 +1,60 @@
+.filter {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 500;
+    background-color: rgba(0, 0, 0, 0.833);
+    display: grid;
+}
+
+.popup-bubble {
+    position: relative;
+    place-self: center;
+    max-width: 400px;
+    width: 80vmin;
+    z-index: 1000;
+}
+
+.popup-bubble--2 {
+    max-width: 1000px;
+    width: 90vmin;
+}
+
+.popup-bubble__img {
+    width: 100%;
+}
+
+/* .popup-bubble__img--portrait {
+    width: 100%;
+} */
+
+.popup-bubble__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1500;
+    display: grid;
+    padding: 8vmin;
+}
+
+.popup-bubble__content--2 {
+    padding: 4vmin;
+    height: 100%;
+}
+
+.popup-bubble__text {
+    margin: 0;
+    max-height: 75%;
+    font-family: 'Life Savers', serif;
+    line-height: 1.8;
+    font-size: clamp(1.4rem, 6vw, 2rem);
+}
+
+.popup-bubble__text--2 {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    text-align: center;
+}
+
+
