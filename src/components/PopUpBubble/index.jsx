@@ -43,7 +43,7 @@ export const PopUpBubbleFullscreen = () => {
     }
 
 	return (
-		<div className={!displayPopup ? "filter" : "filter hidden"}>
+		<div className={!displayPopup ? "filter filter--2" : "filter hidden"}>
             <div className='popup-bubble popup-bubble--2'>
                 <img className='popup-bubble__img popup-bubble__img--portrait' src={PopUpBubbleLandscapeImg} alt="vyskakovací okno" />
                 <div className='popup-bubble__content popup-bubble__content--2'>
