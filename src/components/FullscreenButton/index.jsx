@@ -40,6 +40,16 @@ export const FullscreenButton = () => {
 		}
 	}
 
+
+	const isVideoInFullscreen = () => {
+		if (document.fullscreenElement?.nodeName === 'VIDEO') {
+			openFullscreen()
+		}
+		closeFullscreen()
+	}
+
+	isVideoInFullscreen()
+
 	return (
 		<button onClick={handleClick} className='full-screen-button'>
 			{!fullScreen ? 'Otevřít na' : 'Zavřít'} plnou obrazovku
