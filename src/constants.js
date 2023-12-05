@@ -21,6 +21,7 @@ import tigerInhaleImgPng from './assets/img/tygr_nadech.png'
 // bubbles
 import cubesImg from './assets/img/kosticky.png'
 import slothImg from './assets/img/lenochod.png'
+import slothHeadImg from './assets/img/lenochod_bublina.png'
 import mumImg from './assets/img/maminka.png'
 import bearImg from './assets/img/medvidek.png'
 import bedImg from './assets/img/postylka.png'
@@ -295,8 +296,8 @@ export const FOLW_CONFIG = {
 						src: bubleLeftImg,
 					},
 					imgAtBubble: {
-						className: '',
-						src: '',
+						className: 'panda-sloth-head',
+						src: slothHeadImg,
 					},
 				},
 				{

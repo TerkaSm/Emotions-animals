@@ -4,15 +4,15 @@ import pandaImg from './img/panda_home.svg'
 import tigerImg from './img/tygr_home.svg'
 import {ButtonPrimary, ButtonSecondary} from '../../components/Button'
 import { Audio } from '../../components/Audio'
-import { PopUpBubblePortrait } from '../../components/PopUpBubble'
-import { PopUpBubbleLandscape } from '../../components/PopUpBubble'
+import { PopUpBubbleTurnCall} from '../../components/PopUpBubble'
+import { PopUpBubbleFullscreen } from '../../components/PopUpBubble'
 
 export const HomePage = () => {
 	return (
 		<div className='container'>
 			<Audio />
-			<PopUpBubblePortrait />
-			<PopUpBubbleLandscape />
+			<PopUpBubbleTurnCall />
+			<PopUpBubbleFullscreen />
 			<main>
 				<section className='section section--color-1'>
 					<div className='home'>

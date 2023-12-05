@@ -5,26 +5,8 @@ import PopUpBubblePortraitImg from './img/pop-up_bubble-portrait.svg'
 import PopUpBubbleLandscapeImg from './img/pop-up_bubble-landscape.svg'
 import {FullscreenButton} from '../FullscreenButton'
 
-// export const PopUpBubblePortrait = () => {
-//     const [displayPopup, setDisplayPopup] = useState()
 
-//     if (window.innerWidth > window.innerHeight) {
-//         setDisplayPopup(!displayPopup)
-//     }
-// 	return (
-// 		<div className='filter'>
-//             <div className='popup-bubble'>
-//                 <img className='popup-bubble__img popup-bubble__img--portrait' src={PopUpBubblePortraitImg} alt="vyskakovací okno" />
-//                 <div className='popup-bubble__content'>
-//                     <p className='popup-bubble__text'>Pro správné fungování aplikace otočte prosím vaše zařízení na šířku</p>
-//                 </div>
-//             </div>
-//         </div>
-// 	)
-// }
-
-
-export const PopUpBubblePortrait = () => {
+export const PopUpBubbleTurnCall = () => {
     const [displayPopup, setDisplayPopup] = useState(false);
 
     useEffect(() => {
@@ -53,7 +35,7 @@ export const PopUpBubblePortrait = () => {
 };
 
 
-export const PopUpBubbleLandscape = () => {
+export const PopUpBubbleFullscreen = () => {
     const [displayPopup, setDisplayPopup] = useState(false)
 
     const handleClick = () => {
