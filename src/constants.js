@@ -19,7 +19,8 @@ import tigerEmotionImg from './assets/img/tygr_vztek.gif'
 import tigerThinkImg from './assets/img/tygr_zamysleni.gif'
 import tigerInhaleImgPng from './assets/img/tygr_nadech.png'
 // bubbles
-import cubesImg from './assets/img/kosticky.png'
+import cubesImg from './assets/img/Kostky_vez.png'
+import cubesBaseImg from './assets/img/Kostky_zakladna.png'
 import slothImg from './assets/img/lenochod.png'
 import slothHeadImg from './assets/img/lenochod_bublina.png'
 import mumImg from './assets/img/maminka.png'
@@ -218,7 +219,7 @@ export const FOLW_CONFIG = {
 					},
 					imgAtBubble: {
 						className: 'tiger-cubes--2',
-						src: cubesImg,
+						src: cubesBaseImg,
 					},
 				},
 				{
