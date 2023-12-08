@@ -71,16 +71,16 @@
   
   .tiger-cubes {
     position: absolute;
-    height: 12vh;
-    bottom: 37vmin;
-    right: 70vmin;
+    height: 16vh;
+    bottom: 36vmin;
+    right: 68vmin;
   }
   
   .tiger-cubes--2 {
     position: absolute;
-    height: 12vh;
-    bottom: 60vmin;
-    right: 50vmin;
+    height: 16vh;
+    bottom: 59vmin;
+    right: 46vmin;
   }
   
   .tiger-mum {
