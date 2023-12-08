@@ -21,7 +21,7 @@ import tigerInhaleImgPng from './assets/img/tygr_nadech.png'
 // bubbles
 import cubesImg from './assets/img/Kostky_vez.png'
 import cubesBaseImg from './assets/img/Kostky_zakladna.png'
-import slothImg from './assets/img/lenochod.png'
+import slothImg from './assets/img/lenochod_houpacka.gif'
 import slothHeadImg from './assets/img/lenochod_bublina.png'
 import mumImg from './assets/img/maminka.png'
 import bearImg from './assets/img/medvidek.png'
@@ -260,7 +260,7 @@ export const FOLW_CONFIG = {
 		situation: {
 			audio: pandaSituationAudio,
 			animation: {
-				src: pandaEmotionImg,
+				src: pandaEmotionImg, 
 				className: 'img-panda-emotion',
 			},
 			nextStep: STEPS.BREATH,
