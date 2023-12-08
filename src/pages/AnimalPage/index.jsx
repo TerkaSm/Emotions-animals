@@ -7,6 +7,7 @@ import './panda.css'
 import './tiger.css'
 import {useParams, useNavigate} from 'react-router-dom'
 import {ChoicesStep} from '../../components/Steps/Choices'
+import { PopUpBubbleTurnCall } from '../../components/PopUpBubble'
 
 export const AnimalPage = () => {
 	const {animalId, stepId} = useParams()
@@ -40,6 +41,7 @@ export const AnimalPage = () => {
 	return (
 		<>
 			<Navigation />
+			<PopUpBubbleTurnCall />
 			<section className={`section-background-${animalId}`}>
 				{getComponent()}
 			</section>

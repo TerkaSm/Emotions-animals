@@ -14,6 +14,7 @@ import imgBubbleRight from './img/bublina-napravo.svg'
 import imgBed from './img/postylka.png'
 import imgCubes from './img/kosticky.png'
 import imgSwing from './img/houpacka.png'
+import { PopUpBubbleTurnCall } from '../../components/PopUpBubble'
 
 export const ChildPage = () => {
 	const [current, setCurrent] = useState(0)
@@ -29,6 +30,7 @@ export const ChildPage = () => {
 			<section className='section-background-baby-home'>
 				<Audio src={config[current].audioSrc} onAudioEnded={onAudioEnded} />
 				<Navigation />
+				<PopUpBubbleTurnCall />
 
 				<Link to={`/zviratko/${ANIMALS.CAT}/${STEPS.INTRO}`}>
 					<img className='baby-home__img baby-home__img--1' src={imgCat} alt='kočka'></img>
