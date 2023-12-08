@@ -26,3 +26,9 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+@media screen and (min-width: 1000px) {
+  .full-screen-button {
+      display: none;
+  }
+}

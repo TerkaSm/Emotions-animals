@@ -52,8 +52,9 @@
 }
 
 .baby-home__bubble--left {
-  bottom: 46vmin;
-  right: 135vmin;
+  bottom: 49vmin;
+  right: 116vmin;
+  transform: rotate(10deg);
 }
 
 .baby-home__bubble--rotate {
@@ -71,8 +72,8 @@
 .baby-home__bed {
   position: absolute;
   height: 20vh;
-  bottom: 49vmin;
-  right: 138vmin;
+  bottom: 53vmin;
+  right: 119vmin;
 }
 
 .baby-home__cubes {
