@@ -4,11 +4,11 @@ import React from 'react'
 
 export const InfoPage = () => {
 	return (
-		<section className='info u-padding-bottom'>
-			<div className='info__content '>
+		<section className='info'>
+			<div className='info__content u-padding-bottom'>
 				<h1 className='info__title'>O projektu</h1>
 				<p className='info__text'>
-					Jsme tři kodérky, které chtějí změnit svou kariéru a naučit se něco nového. Náš projekt je
+					Jsme tři frontend vývojářky, které chtějí změnit svou kariéru a naučit se něco nového. Náš projekt je
 					jednoduchá naučná hra pro děti od 2 do 5 let při které je vítaná spolupráce rodičů. Vybraly jsme si
 					tři zvířátka, která provedou děti situacemi se kterými se velmi často setkávají. Jedná se o strach,
 					vztek a smutek.
@@ -68,9 +68,16 @@ export const InfoPage = () => {
 					Najdete je vždy v pravém a levém horním rohu a fungují na posun (swipe) prstem. Dostanou vás na
 					domovskou obrazovku (domeček) nebo sem do infa (i).
 				</p>
+				<h1 className='info__title'>Poděkování</h1>
+				<p className='info__text u-padding-bottom'>
+					Tuto webovou aplikaci bychom ale nezvládly uvést do této podoby bez pomoci. Tímto tedy děkujeme našim skvělým mentorům Jakubovi Smaginovi a Magdě Piątek. Další dík patří lektorovi Luďkovi Rolečkovi za poskytnutí rad ohledně animací a CSS. 
+				</p>
 
-				<ButtonPrimary src={'/'}>Domů</ButtonPrimary>
+				<div className='u-text-right'>
+					<ButtonPrimary src={'/'}>Domů</ButtonPrimary>
+				</div>
 			</div>
+			<p className='info__text u-text-center'>2023 - Vytvořeno pro Digitální akademii WEB - Czechitas</p>
 		</section>
 	)
 }

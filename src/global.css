@@ -75,6 +75,14 @@ main {
 	padding-bottom: 2rem;
 }
 
+p.u-text-center {
+	text-align: center;
+}
+
+.u-text-right {
+	text-align: right;
+}
+
 /* ANIMACE */
 
 @keyframes pohyb-dolu {
